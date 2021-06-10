@@ -4,10 +4,10 @@
         position: absolute;
         width: 36px;
         height: 36px;
-        top: -25%;
         z-index: -1;
         background: $main_color;
         border-radius: 100%;
-        left:0px;
-    }
+        top:-25%;
+        left:0px; 
+        }
 }
