@@ -11,3 +11,17 @@
         left:0px; 
         }
 }
+@mixin before_circle_lit {
+    &::before {
+        content:'';
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        z-index: -1;
+        background: $main_color;
+        border-radius: 100%;
+        top:50%;
+        left:0-7px; 
+        transform: translateY(-50%);
+        }
+}
