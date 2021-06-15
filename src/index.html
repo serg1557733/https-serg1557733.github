@@ -55,7 +55,7 @@
         <div class="sidepanel_divider"></div>
         <div class="sidepanel_text"> <span>Социальные сети</span> </div>
     </aside>
-    <div class="menu">
+    <div class="menu" >
         <div class="menu__block"> 
             <div class="menu__close">
             <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -64,11 +64,11 @@
         </div>
             <nav>
                 <ul class="menu__list">
-                    <li class="menu__link"><a href="#">ПРО МЕНЯ</a></li>
-                    <li class="menu__link"><a href="#">МОЙ ОПЫТ</a></li>
-                    <li class="menu__link"><a href="#">МОИ СКИЛЫ</a></li>
-                    <li class="menu__link"><a href="#">МОИ РАБОТЫ</a></li>
-                    <li class="menu__link"><a href="#">МОЕ РЕЗЮМЕ</a></li>
+                    <li class="menu__link"><a href="#about">ОБО МНЕ</a></li>
+                    <li class="menu__link"><a href="#way">МОЙ ОПЫТ</a></li>
+                    <li class="menu__link"><a href="#skills">МОИ СКИЛЫ</a></li>
+                    <li class="menu__link"><a href="#portfolio">МОИ РАБОТЫ</a></li>
+                    <li class="menu__link"><a href="/mycv" >МОЕ РЕЗЮМЕ</a></li>
                     <li class="menu__link"><a href="#">КОНТАКТЫ</a></li>
                 </ul>
             </nav>
@@ -90,20 +90,21 @@
         <div class="container">        
             <h2 class="title title_fz20 promo__subtitle">Меня зовут Сергей Борщ</h2>
             <h1 class="title title_fz48 ">Я web-разработчик из города Харьков </h1>
-            <div class="promo_btns">
-                <a href="#" class="promo_link btn">Портфолио</a>
-                <a href="#" class="promo_link btn_transp">Про меня</a>
+            <div class="promo_btns" id="btns">
+                <a href="#portfolio" class="promo_link btn">Портфолио</a>
+                <a href="#about" class="promo_link btn_transp"> Обо мне</a>
+                <a href="#contacts"  class="promo_link btn"> Контакты </a>
             </div>
         </div>
     </section>
-   <section class="about">
+   <section class="about" id="about" >
        <div class="container">
            <div class="about__wrapper">
                <div class="about__photo">
                    <img src="img/main_photo.jpg" alt="my foto">
                 </div>
                <div class="about__desc">
-                   <h2 class="about__title title_fz16">Про меня</h2>
+                   <h2 class="about__title title_fz16">Обо мне</h2>
                    <div class="about__subtitle title">Меня зовут Сергей</div>
                    <div class="divider divider_m0"></div>
                    <p class="about__text">Я выпускник магистратуры ХНУРЭ, получил диплом с отличием. Всегда интересовался программированием и информатикой. Работал в сфере ремонта и продажи электроники, снимал влоги. Недавно начал изучать html, css js и мне понравилось, думаю, что могу быстро учиться и писать хороший код. </p>
@@ -133,7 +134,7 @@
            </div>
        </div>
    </section>
-   <section class="resume">
+   <section class="resume" id="way">
        <div class="container">
            <h2 class="title title_fz16 resume__title">Опыт</h2>
            <div class="title resume__subtitle">Мой путь</div>
@@ -216,7 +217,7 @@
 
        </div>
    </section>
-   <section class="skills">
+   <section class="skills" id="skills">
        <div class="container">
             <h2 class="title title_fz16 resume__title">Навыки</h2>
             <div class="title skills__subtitle">Что я использую в работе</div>
@@ -251,16 +252,95 @@
             <div class="skills__item">
                 <div class="skills__icon"><img src="icons/skills/node.js.svg" alt="html5"></div>
                     <div class="title title_fz14 skills__header">Node.js</div>
-                    <div class="skills__desc">Эта платформа позволяет создавать бэкенд для вашего продукта - “мозги”, которые будут выполнять действия, которые пользователь не видит</div>
+                    <div class="skills__desc">Эта платформа позволяет создавать бэкенд для вашего продукта, которые будут выполнять действия не видимые пользователю </div>
+                </div>
+                </div>
+            <div class="skills__progress-wrapper">
+                <div class="skills__progress-item">
+                    <div class="skills__progress-header">
+                        <div class="title title_fz14 skills__progress-desc">Создание сайтов</div>
+                        <div class="title title_fz14m skills__counter">100%</div> 
+                    </div>
+                    <div class="skills__progress-bar">
+                        <div class="skills__progress-status"> <span></span> </div>
+                    </div>
+                </div>
+
+                <div class="skills__progress-item">
+                    <div class="skills__progress-header">
+                        <div class="title title_fz14 skills__progress-desc">Создание приложений</div>
+                        <div class="title title_fz14m skills__counter">70%</div> 
+                    </div>
+                    <div class="skills__progress-bar">
+                        <div class="skills__progress-status"> <span></span> </div>
+                    </div>
+                </div>
+
+                <div class="skills__progress-item">
+                    <div class="skills__progress-header">
+                        <div class="title title_fz14 skills__progress-desc">Работа с данными</div>
+                        <div class="title title_fz14m skills__counter">70%</div> 
+                    </div>
+                    <div class="skills__progress-bar">
+                        <div class="skills__progress-status"> <span></span> </div>
+                    </div>
+                </div>
+
+                <div class="skills__progress-item">
+                    <div class="skills__progress-header">
+                        <div class="title title_fz14 skills__progress-desc">Креативность</div>
+                        <div class="title title_fz14m skills__counter">75%</div> 
+                    </div>
+                    <div class="skills__progress-bar">
+                        <div class="skills__progress-status"> <span></span> </div>
+                    </div>
+                </div>
+
+                <div class="skills__progress-item">
+                    <div class="skills__progress-header">
+                        <div class="title title_fz14 skills__progress-desc">Создание дизайна</div>
+                        <div class="title title_fz14m skills__counter">65%</div> 
+                    </div>
+                    <div class="skills__progress-bar">
+                        <div class="skills__progress-status"> <span></span> </div>
+                    </div>
+                </div>
+
+                <div class="skills__progress-item">
+                    <div class="skills__progress-header">
+                        <div class="title title_fz14 skills__progress-desc">Soft skills</div>
+                        <div class="title title_fz14m skills__counter">85%</div> 
+                    </div>
+                    <div class="skills__progress-bar">
+                        <div class="skills__progress-status"> <span></span> </div>
+                    </div>
+                </div>
+
             </div>
-        
-            </div>
+            
+            
        </div>
+   </section>
+   <section class="portfolio" id="portfolio">
+       <div class="container">
+        <h2 class="title title_fz16 portfolio__title">Портфолио</h2>
+        <div class="title portfolio__subtitle">Мои работы</div>
+        <div class="divider"></div>
+        <div class="portfolio__wrapper">
+            <a href="/uber" class="portfolio__item portfolio__uber"><img src="img/works/uber.jpg" alt="uber"></a>
+            <a href="/mycv" class="portfolio__item portfolio__plans"><img src="img/works/plans.jpg" alt="bread"></a>
+            <a href="/pulse" class="portfolio__item portfolio__pulse"><img src="img/works/pulse.jpg" alt="pulse"></a>
+            <a href="/wp" class="portfolio__item portfolio__wp"><img src="img/works/wp.svg" alt="mac"></a>
+            
+            
+        </div>
+       </div>
+
    </section>
 
 
 
-
+   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 

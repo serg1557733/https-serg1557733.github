@@ -34,4 +34,46 @@
         line-height: 18px;
         color: #000000;
     }
+    &__progress{
+        &-wrapper{
+          display: grid;
+          grid-template-columns:  repeat(3, 350px);
+          grid-template-rows: repeat(2, 70px);
+          gap: 30px 45px;
+        }
+        &-header {
+            width: 350px;
+            display: flex;
+            justify-content: space-between;
+        }
+        &-desc {
+            position: relative;
+            margin-top: 8px;
+            margin-left: 14px;
+            @include before_circle;
+                &:before{
+                    top: -30%;
+                    left: -15px;
+                }
+        }
+        &-bar{
+            width: 350px;
+            height: 14px;
+            margin-top: 27px;
+            background: #E8E4DE;
+            border-radius: 4px;
+        }
+        &-status {
+            width: 350px;
+            height: 14px;
+            border-radius: 4px;
+            span {
+                display: block;
+                background: $main_color;
+                height: 14px;
+                width: 0px;
+            }
+            
+        }
+    }
 }
