@@ -1,0 +1,90 @@
+.contacts {
+    margin-top: 120px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 400px 583px;
+        grid-template-rows: 600px;
+        column-gap: 68px;
+    }
+    &__title {
+        padding-left: 12px;
+        padding-top: 6px;
+        position: relative;
+        @include before_circle;
+        &:before {
+            top: 0;
+            left: 0;
+        }
+    }
+    &__photo {
+        grid-row: 1/3;
+        align-self: center;
+        img {
+            width: 100%;
+        }
+    }
+    &__link {
+        img {
+            width: 30px;
+            height: 30px;
+            margin-right: 25px;
+        }
+        &-wrapper {
+            margin-top: 15px;   
+        }
+    }
+    &__form {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 280px);
+        grid-template-rows: 45px 95px 45px;
+        row-gap: 30px;
+        column-gap:25px;
+    }
+    &__input {
+        position: relative;
+        input{
+            padding:0 20px;
+            width: 100%;
+            height: 100%;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+        label {
+            position: absolute;
+            padding:0 8px;
+            top: -8px;
+            left: 20px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            height: 18px;
+            background: #FFFFFF;        }
+    }
+    &__textarea {
+        position: relative;
+        grid-column: 1/3;
+        textarea {
+            padding:20px 20px;
+            width: 100%;
+            height: 100%;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            resize: none;
+        }
+        label {
+            position: absolute;
+            padding:0 8px;
+            top: -8px;
+            left: 20px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            background: #FFFFFF;
+        }    
+    }
+    
+
+}
