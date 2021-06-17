@@ -242,12 +242,12 @@
                     <div class="title title_fz14 skills__header">Jquery</div>
                     <div class="skills__desc">Библиотека Jquery позволит ускорить разработку. Без необходимости интегрировать в проект мы её не будем, но навык работы с ней присутствует</div>
             </div>
-            <div class="skills__item">
+            <div class="skills__item skills__item_filter">
                 <div class="skills__icon"><img src="icons/skills/react.svg" alt="html5"></div>
                     <div class="title title_fz14 skills__header">React</div>
                     <div class="skills__desc">Эта библиотека позволяет создавать web-приложения. Мы можем создать максимально интерактивный продукт именно под ваши цели</div>
             </div>
-            <div class="skills__item">
+            <div class="skills__item skills__item_filter_b4">
                 <div class="skills__icon"><img src="icons/skills/node.js.svg" alt="html5"></div>
                     <div class="title title_fz14 skills__header">Node.js</div>
                     <div class="skills__desc">Эта платформа позволяет создавать бэкенд для вашего продукта, которые будут выполнять действия не видимые пользователю </div>
@@ -332,7 +332,7 @@
         </div>
        </div>
    </section>
-   <section class="contacts">
+   <section  id="contacts" class="contacts">
        <div class="container">
            <div class="contacts__wrapper">
                 <div class="contacts__photo">
@@ -344,25 +344,34 @@
                     <div class="divider divider_m0"></div>
                     <div class="contacts__way title title_fz14mt25">Любым удобным для вас способом:</div>
                     <div class="contacts__link-wrapper">
-                        <a href="#" class="contacts__link"><img src="icons/social/viber.png" alt="viber"></a>
+                        <a href="viber://add?number=380939291223" class="contacts__link"><img src="icons/social/viber.png" alt="viber"></a>
                         <a href="https://t.me/SputnikovoeTV_androidTV" class="contacts__link"><img src="icons/social/telegram.svg" alt="telegram"></a>
                         <a href="https://www.linkedin.com/in/serhiiborshch" class="contacts__link"><img src="icons/social/linkedin.svg" alt="linkedin"></a>
                     </div>
                     <div class="contacts__call title title_fz14mt20">Или оставьте ваше сообщение и я с вами свяжусь:</div>
                 <form action="#" class="contacts__form">
                     <div class="contacts__input">
-                        <input id="name" type="text">
+                        <input id="name" required type="text">
                         <label for="name">Ваше имя</label>
                     </div>
                     <div class="contacts__input">
-                        <input id="email" type="email">
+                        <input id="email" required type="email">
                         <label for="email">Ваша почта</label>
                     </div>
                     <div class="contacts__textarea">
-                        <textarea name="text" id="text"></textarea>
+                        <textarea name="text" required id="text"></textarea>
                         <label for="text">Ваше сообщение</label>
                     </div>
-                    <div><button class="btn contacts__btn ">Отправить сообщение</button></div>
+                    <div>
+                        <button class="btn contacts__btn ">Отправить сообщение</button> 
+                    </div>    
+                    <div class="contacts__policy">
+                            <input id="policy" required type="checkbox" class="policy">
+                            <span>Я согласен(а) с <a href="/policy.html" target="_blank" >политикой конфиденциальности</a></span>
+                        </div>  
+                    
+                    
+                  
                 </form>
                 </div>
            </div>

@@ -23,6 +23,12 @@
         padding: 30px 30px 25px 30px; 
         border: 1px solid #000000;
         box-sizing: border-box;
+        &_filter {
+            filter: blur(1px);
+            &_b4 {
+                filter: blur(4px);
+            }
+        }
     }
     &__header {
         margin-top: 20px;
