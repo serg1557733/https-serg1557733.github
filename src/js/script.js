@@ -28,4 +28,35 @@ $(document).ready(function(){
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 1500);
     });
+
+
+    const form = document.getElementById('form');
+    form.addEventListener('submit',formSend);
+
+    async function formSend(e) {
+        e.preventDefault();
+      /*   console.log(FormData('form'));
+        let formData = form.dataset;  */
+        let response = await fetch('sendmail.php', {
+            method: 'POST',
+           /*  body: formData */
+        });
+        if (response.ok) {
+            let result = await response.json();
+            alert (result.messsage);
+            form.reset();
+        }
+        else {console.log('error send')
+    };
+    };
+});
+
+const overlay = document.querySelector('.overlay');
+const formSend = document.querySelector('.contacts__btn');
+formSend.addEventListener('click',() => {
+    overlay.classList.add('overlay_active')
+});
+
+document.addEventListener('scroll',()=>{
+    overlay.classList.remove('overlay_active')
 });

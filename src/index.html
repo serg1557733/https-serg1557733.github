@@ -154,7 +154,9 @@
                             <div class="resume__item-head">
                                  <div class="resume__item-icon"><img src="icons/experience/courses.svg" alt="university"></div>
                                  <h4 class="title title_fz14 resume__item-subheader">Udemy</h4>
-                                 <div class="resume__item-desc">Курсы по Web-разработке <br> и программированию(2020-2021)</div> 
+                                 <div class="resume__item-desc">Курсы по Web-разработке <br> и программированию(2020-2021)
+                                 <img class='img_certificate' src="img/udemy1.jpg" alt="certificate">
+                                </div> 
                              </div>
                              <div class="resume__item-text"> «WEB-разработчик 2021» <br> «Полный курс по JavaScript + React - с нуля до результата» </div>
                          </div>
@@ -347,7 +349,7 @@
                         <a href="https://www.linkedin.com/in/serhiiborshch" class="contacts__link"><img src="icons/social/linkedin.svg" alt="linkedin"></a>
                     </div>
                     <div class="contacts__call title title_fz14mt20">Или оставьте ваше сообщение и я с вами свяжусь:</div>
-                <form action="#" class="contacts__form">
+                <form id="form" action="#" class="contacts__form">
                     <div class="contacts__input">
                         <input id="name" required type="text">
                         <label for="name">Ваше имя</label>
@@ -361,18 +363,22 @@
                         <label for="text">Ваше сообщение</label>
                     </div>
                     <div class="contacts__btn-wrapper">
-                        <button class="btn contacts__btn ">Отправить сообщение</button> 
+                        <button type="submit"   class="btn contacts__btn">Отправить сообщение</button> 
                     </div>    
                     <div class="contacts__policy">
                             <input id="policy" required type="checkbox" class="policy">
                             <span>Я согласен(а) с <a href="/policy.html" target="_blank" >политикой конфиденциальности</a></span>
                         </div>  
-                    
                 </form>
                 </div>
            </div>
        </div>
    </section>
+   <div class="overlay">
+       <div class="overlay__form">
+           При отправке формы произошла ошибка, попробуйте в другой раз или свяжитесь с нами по ссылкам в соцсетях.
+       </div>
+   </div>
 
 
 

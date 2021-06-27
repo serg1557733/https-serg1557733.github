@@ -59,7 +59,10 @@
             font-weight: 500;
             font-size: 12px;
             line-height: 18px;
-
+            img {
+                display: block;
+                width: 200px;
+            }
         }
         &-subheader {
             margin-bottom: 0;
@@ -81,3 +84,16 @@
 
     }
 }
+/* .img_certificate {
+    display: block;
+    width: 200px;
+    transition: all 0.8s;
+    &:hover {
+        cursor: pointer;
+    }
+}
+.img_click {
+    position: absolute;
+    z-index: 15;
+    width:600px; 
+} */
