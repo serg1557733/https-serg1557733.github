@@ -135,6 +135,9 @@
             width: 100%;
         }
     }
+    .portfolio__test {
+        grid-column: auto;
+    }
     .contacts__wrapper {
         grid-template-columns: 200px 470px;
         column-gap: 40px; 
