@@ -50,11 +50,13 @@ $(document).ready(function(){
     };
     };
 });
-
+const inputName = document.getElementById('name');
+const inputEmail = document.getElementById('email');
 const overlay = document.querySelector('.overlay');
 const formSend = document.querySelector('.contacts__btn');
 formSend.addEventListener('click',() => {
-    overlay.classList.add('overlay_active')
+    if (inputName.value !='' && inputEmail.value !='') 
+    {overlay.classList.add('overlay_active')}
 });
 
 document.addEventListener('scroll',()=>{
