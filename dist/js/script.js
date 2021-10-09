@@ -4,12 +4,14 @@ const menu = document.querySelector('.menu');
 const closeElem = document.querySelector('.menu__close');
 
 hamburger.addEventListener('click',() => {
-    menu.classList.add('active')
-    hamburger.classList.add('hamburger_active')
+    menu.classList.add('active');
+    hamburger.classList.add('hamburger_active');
+    document.body.style.overflow = "hidden";
 });
 closeElem.addEventListener('click',() => {
     menu.classList.remove('active')
-    hamburger.classList.remove('hamburger_active')
+    hamburger.classList.remove('hamburger_active');
+    document.body.style.overflow = "";
 });
 
 //auto progress bar width 
@@ -62,3 +64,54 @@ formSend.addEventListener('click',() => {
 document.addEventListener('scroll',()=>{
     overlay.classList.remove('overlay_active')
 });
+
+const deadline = '2022-02-15';
+
+    function getTimeRemaining(endtime) {
+        const toTime = Date.parse(endtime) - Date.parse(new Date()),
+            days = Math.floor(toTime /(1000*60*60*24)),
+            hours = Math.floor(toTime /(1000*60*60) % 24),
+            minutes = Math.floor((toTime /1000/60)%60),
+            seconds = Math.floor((toTime /1000)%60);
+            return {
+                'total' : toTime,
+                'days' : days,
+                'hours':hours,
+                'minutes' : minutes,
+                'seconds': seconds
+            }
+    }
+
+    function addZero(num) {
+        if (num >= 0 && num <10) {
+            return `0${num}`;
+        } else 
+        return num;
+    }
+
+
+    function setClock(selector, endTime) {
+        const timer = document.querySelector(selector),
+            days =timer.querySelector('#days'),
+            hourse =timer.querySelector('#hourse'),
+            minutes =timer.querySelector('#minutes'),
+            seconds =timer.querySelector('#seconds'),
+            timeInterval = setInterval(updateClock, 1000);
+
+            updateClock();
+
+        function updateClock() {
+            const t = getTimeRemaining(endTime);
+                days.innerHTML = addZero(t.days);
+                hours.innerHTML = addZero(t.hours);
+                minutes.innerHTML = addZero(t.minutes);
+                seconds.innerHTML = addZero(t.seconds);
+
+                if (t.total <= 0) {
+                    clearInterval(timeInterval);
+                }
+        }
+
+    }
+
+    setClock('.timer', deadline);
