@@ -57,7 +57,7 @@ const inputEmail = document.getElementById('email');
 const overlay = document.querySelector('.overlay');
 const formSend = document.querySelector('.contacts__btn');
 formSend.addEventListener('click',() => {
-    if (inputName.value !='' && inputEmail.value !='') 
+    if (inputName.value !='' && inputEmail.value !='' && inputEmail.value !='') 
     {overlay.classList.add('overlay_active')}
 });
 
@@ -65,7 +65,7 @@ document.addEventListener('scroll',()=>{
     overlay.classList.remove('overlay_active')
 });
 
-const deadline = '2022-02-15';
+/* const deadline = '2022-02-15';
 
     function getTimeRemaining(endtime) {
         const toTime = Date.parse(endtime) - Date.parse(new Date()),
@@ -115,3 +115,4 @@ const deadline = '2022-02-15';
     }
 
     setClock('.timer', deadline);
+ */
